@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
             <Label Text="Examen Programación Movil" HorizontalOptions="Center"/>
-            <Image Source="logo.png" WidthRequest="300" MinimumHeightRequest="180"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" WidthRequest="300" MinimumHeightRequest="180"></Image>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
