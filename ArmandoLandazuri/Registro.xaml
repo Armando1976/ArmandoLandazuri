@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArmandoLandazuri.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" Text="" HorizontalTextAlignment="Center" FontSize="12" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Monto Inicial" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtMontoInicial" Grid.Row="1" Grid.Column="1" />
+                <Label Text="Pago Mensual"  Grid.Row="2" Grid.Column="0"/>
+                <Button Text="Calcular" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked_1"/>
+                <Entry x:Name="txtPagoMensual" MaxLength="10" Grid.Row="3" />
+            </Grid>
+            <Button Text="Guardar" HorizontalOptions="Center" Clicked="Button_Clicked_2"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
