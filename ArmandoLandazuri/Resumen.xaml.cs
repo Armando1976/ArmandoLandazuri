@@ -19,8 +19,9 @@ namespace ArmandoLandazuri
             lblNombre.Text = nombre;
             lblMonto.Text = Convert.ToString(montoi);
             double total;
-            total = ((((3000 - (Convert.ToDouble(lblMonto.Text)))/5)+150)*5)+ (Convert.ToDouble(lblMonto.Text);
+            total = ((((3000 - (Convert.ToDouble(lblMonto.Text)))/5)+150)*5)+ (Convert.ToDouble(lblMonto.Text));
             txtTotal.Text = Convert.ToString(total);
+            lblMonto.Text = "Su pago es de:";
 
         }
 

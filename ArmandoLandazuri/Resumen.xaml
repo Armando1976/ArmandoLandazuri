@@ -4,9 +4,7 @@
              x:Class="ArmandoLandazuri.Resumen">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Fin de Examen" HorizontalOptions="CenterAndExpand" />
             <Label x:Name="lblUsuario" Text=""/>
             <Label x:Name="lblNombre" Text=""/>
             <Label x:Name="lblMonto" Text=""/>
