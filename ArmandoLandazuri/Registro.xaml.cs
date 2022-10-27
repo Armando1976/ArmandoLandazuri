@@ -31,9 +31,16 @@ namespace ArmandoLandazuri
             double recargo = valorsemestre * 5 / 100;
             double cuota=0;
             string r;
-            cuota = (valorsemestre - montoinicial) / 5;
-            r = Convert.ToString(cuota+recargo);
-            txtPagoMensual.Text = r;
+            if (montoinicial < valorsemestre & montoinicial>0 & montoinicial<valorsemestre)
+            { 
+                cuota = (valorsemestre - montoinicial) / 5;
+                r = Convert.ToString(cuota+recargo);
+                txtPagoMensual.Text = r;
+            }
+            else
+            {
+                DisplayAlert("Alerta", "El pago inicial debe estar entre 1 y 3000", "Cerrar");
+            }
         }
 
         private async void Button_Clicked_2(object sender, EventArgs e)
